@@ -13,9 +13,12 @@ It is designed strictly as a **learning and academic project** to understand the
 ```bash
 rail-fence-cipher-cryptanalysis-python/
 │
-├── app.py            # Rail Fence brute-force cryptanalysis tool (CLI based)
-├── LICENSE           # Project license
-└── README.md         # Project documentation
+├── assets/             # Screenshots
+├── app.py              # Clean CLI 
+├── interactive.py      # Rich-powered CLI
+├── requirements.txt    # Dependencies
+├── LICENSE             # Project license
+└── README.md           # Project documentation
 ```
 
 ---
@@ -44,6 +47,16 @@ rail-fence-cipher-cryptanalysis-python/
   - Brute-force controller
 - CLI-based execution
 
+### 🎨 Rich CLI (Interactive Mode)
+- Beautiful colored terminal UI using Rich
+- Displays key matrix in a structured table 🔥
+- Interactive prompts with validation
+- Clean and readable output panels
+
+### ⚡ Dual Mode Support
+- 🧼 Basic CLI → Lightweight, no dependencies
+- 🎨 Rich CLI → Enhanced UI with colors and structured display
+
 ---
 
 ## 🛠 Technologies Used
@@ -55,6 +68,7 @@ rail-fence-cipher-cryptanalysis-python/
 | **2D Lists (Matrix)**  | Rail pattern simulation             |
 | **Control Flow Logic** | Zigzag traversal and reconstruction |
 | **Brute Force Search** | Exhaustive rail testing             |
+| **Rich**               | Styled CLI, colors, panels          |
 
 ---
 
@@ -83,12 +97,35 @@ git clone https://github.com/ShakalBhau0001/rail-fence-cipher-cryptanalysis-pyth
 cd rail-fence-cipher-cryptanalysis-python
 ```
 
-### 3️⃣ Run the program
+### 3️⃣ Install Dependencies
+
+```bash
+pip install rich
+```
+
+**OR**
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### 4️⃣ Running the Project
+
+#### 🧼 Basic CLI Version
+
 ```bash
 python app.py
 ```
 
-### 4️⃣ Enter Cipher Text
+#### 🎨 Rich Interactive Version
+
+```bash
+python interactive.py
+```
+
+### 5️⃣ Follow the prompts for Basic CLI Version
 - Provide any Rail Fence encrypted message (without spaces)
 - View all possible plaintext outputs for different rail values
 - Identify the most meaningful English result
@@ -123,7 +160,6 @@ Rails = 4 → HLWLREOLDO
 - Rank most probable plaintext automatically
 - Add English-likelihood scoring system
 - Add file input support
-- Integrate into a Classical Crypto Toolkit
 - Convert into reusable Python module
 - Add visualization of zigzag pattern
 
@@ -134,6 +170,12 @@ Rails = 4 → HLWLREOLDO
 This project is created **for educational and cybersecurity learning purposes only.**
 It demonstrates the inherent weakness of classical transposition ciphers such as the Rail Fence Cipher.
 It must not be used for unauthorized access, malicious activity, or real-world security attacks.
+
+---
+
+## 📸 Preview
+
+![Rich CLI Preview](assets/BruteRail.png)
 
 ---
 
